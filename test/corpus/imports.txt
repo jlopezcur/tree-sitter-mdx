@@ -1,0 +1,38 @@
+==================
+imports statements
+==================
+
+import { test } from 'test';
+import { test1, test2 } from 'test';
+
+---
+
+(source_file
+  (import_statement
+    (import_clause
+      (named_imports
+        (import_specifier
+          (identifier)
+        )
+      )
+    )
+    (string
+      (string_fragment)
+    )
+  )
+  (import_statement
+    (import_clause
+      (named_imports
+        (import_specifier
+          (identifier)
+        )
+        (import_specifier
+          (identifier)
+        )
+      )
+    )
+    (string
+      (string_fragment)
+    )
+  )
+)

@@ -1,0 +1,26 @@
+=============
+jsx fragments
+=============
+
+<Meta title="Types/GroupList" />
+
+---
+
+(source_file
+  (jsx_statement
+    (jsx_self_closing_element
+      (identifier)
+      (jsx_attribute
+        (property_identifier
+          (identifier)
+        )
+        (string
+          (string_fragment)
+        )
+      )
+    )
+    (MISSING ";")
+  )
+)
+
+
