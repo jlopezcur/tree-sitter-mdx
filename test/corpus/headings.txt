@@ -1,0 +1,39 @@
+===================
+headings statements
+===================
+
+# test
+## test
+### test
+#### test
+##### test
+###### test
+
+---
+
+(source_file
+  (heading_statement
+    (heading_marker)
+    (heading_text)
+  )
+  (heading_statement
+    (heading_marker)
+    (heading_text)
+  )
+  (heading_statement
+    (heading_marker)
+    (heading_text)
+  )
+  (heading_statement
+    (heading_marker)
+    (heading_text)
+  )
+  (heading_statement
+    (heading_marker)
+    (heading_text)
+  )
+  (heading_statement
+    (heading_marker)
+    (heading_text)
+  )
+)

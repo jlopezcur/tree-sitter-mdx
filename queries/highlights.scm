@@ -184,3 +184,5 @@
   "with"
   "yield"
 ] @keyword
+
+(heading_marker) @keyword

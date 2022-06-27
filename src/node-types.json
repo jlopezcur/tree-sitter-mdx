@@ -1365,6 +1365,32 @@
     }
   },
   {
+    "type": "heading_statement",
+    "named": true,
+    "fields": {
+      "marker": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "heading_marker",
+            "named": true
+          }
+        ]
+      },
+      "text": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "heading_text",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "identifier",
     "named": true,
     "fields": {}
@@ -2512,6 +2538,10 @@
           "named": true
         },
         {
+          "type": "heading_statement",
+          "named": true
+        },
+        {
           "type": "import_statement",
           "named": true
         },
@@ -3118,6 +3148,10 @@
     }
   },
   {
+    "type": " ",
+    "named": false
+  },
+  {
     "type": "!",
     "named": false
   },
@@ -3428,6 +3462,14 @@
   {
     "type": "get",
     "named": false
+  },
+  {
+    "type": "heading_marker",
+    "named": true
+  },
+  {
+    "type": "heading_text",
+    "named": true
   },
   {
     "type": "if",

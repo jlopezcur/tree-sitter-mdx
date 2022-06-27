@@ -52,7 +52,21 @@ module.exports = grammar({
     source_file: ($) => repeat($._node),
 
     _node: ($) =>
-      choice($.export_statement, $.import_statement, $.jsx_statement),
+      choice(
+        $.export_statement,
+        $.import_statement,
+        $.jsx_statement,
+        $.heading_statement
+      ),
+
+    heading_statement: ($) =>
+      seq(
+        field('marker', $.heading_marker),
+        ' ',
+        field('text', $.heading_text)
+      ),
+    heading_marker: () => /\#{1,6}/,
+    heading_text: () => /[a-zA-Z_ \w]*/,
 
     //
     // Export declarations
